@@ -1,0 +1,15 @@
+# 개인 프로필과 자료
+profile.md
+*.local.md
+private/
+
+# 공고 원문·개인 서류
+*.pdf
+*.hwp
+*.hwpx
+*.xls
+*.xlsx
+*.png
+*.jpg
+
+.DS_Store
