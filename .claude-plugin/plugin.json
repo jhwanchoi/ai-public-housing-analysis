@@ -8,7 +8,7 @@
     "url": "https://github.com/jhwanchoi"
   },
   "repository": "https://github.com/jhwanchoi/ai-public-housing-analysis",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "keywords": [
     "korea",
     "public-housing",
@@ -25,5 +25,7 @@
     "./skills/housing-unit-pick",
     "./skills/housing-apply",
     "./skills/housing-tracker"
-  ]
+  ],
+  "icon": "./.claude-plugin/icon.png",
+  "homepage": "https://github.com/jhwanchoi/ai-public-housing-analysis"
 }

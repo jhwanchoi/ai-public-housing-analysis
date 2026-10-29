@@ -17,3 +17,6 @@ private/
 # 개인 패턴 파일을 실수로 저장소에 둔 경우 대비
 private-patterns.txt
 applications.md
+
+# 플러그인 아이콘은 허용
+!.claude-plugin/icon.png

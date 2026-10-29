@@ -11,7 +11,8 @@ fail=0
 
 # 1) 개인 자료 파일 자체를 막는다
 blocked_files=$(git diff --cached --name-only --diff-filter=ACMR \
-  | grep -E '(^|/)(profile|applications)\.md$|\.(pdf|hwp|hwpx|xls|xlsx|png|jpe?g)$|(^|/)private/' || true)
+  | grep -E '(^|/)(profile|applications)\.md$|\.(pdf|hwp|hwpx|xls|xlsx|png|jpe?g)$|(^|/)private/' \
+  | grep -vxF '.claude-plugin/icon.png' || true)
 if [ -n "$blocked_files" ]; then
   echo "[check-private] 개인 자료로 보이는 파일이 스테이징되어 있습니다:" >&2
   echo "$blocked_files" | sed 's/^/  - /' >&2
