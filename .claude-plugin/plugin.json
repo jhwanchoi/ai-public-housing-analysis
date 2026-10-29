@@ -1,12 +1,22 @@
 {
   "name": "ai-public-housing-analysis",
-  "displayName": "ai-public-housing-analysis — 공공임대·청약 공고 분석",
+  "displayName": "ai-public-housing-analysis: 공공임대와 청약 공고 분석",
   "version": "0.1.0",
-  "description": "한국 공공임대·공공지원민간임대·공공분양 모집공고를 개인 프로필 기준으로 탐색, 자격 판정, 후보 비교, 신청 일정 등록, 신청 현황 관리까지 돕는 skill 7개",
-  "author": { "name": "jhwanchoi", "url": "https://github.com/jhwanchoi" },
+  "description": "한국 공공임대, 공공지원민간임대, 공공분양 모집공고를 내 조건에 맞춰 찾고, 자격을 판정하고, 주택을 비교하고, 신청 일정과 현황까지 관리하는 skill 7개",
+  "author": {
+    "name": "jhwanchoi",
+    "url": "https://github.com/jhwanchoi"
+  },
   "repository": "https://github.com/jhwanchoi/ai-public-housing-analysis",
   "license": "UNLICENSED",
-  "keywords": ["korea", "public-housing", "rental", "청약", "LH", "SH"],
+  "keywords": [
+    "korea",
+    "public-housing",
+    "rental",
+    "청약",
+    "LH",
+    "SH"
+  ],
   "skills": [
     "./skills/housing-notice-analysis",
     "./skills/housing-scout",
