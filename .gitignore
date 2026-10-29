@@ -13,3 +13,7 @@ private/
 *.jpg
 
 .DS_Store
+
+# 개인 패턴 파일을 실수로 저장소에 둔 경우 대비
+private-patterns.txt
+applications.md

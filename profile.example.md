@@ -1,6 +1,6 @@
 # 주거·청약 분석 프로필 (양식)
 
-> 실제 값은 이 파일을 `profile.md`로 복사해 채운다. `profile.md`는 `.gitignore`에 포함되어 커밋되지 않는다.
+> 실제 값은 이 파일을 `~/.config/ai-public-housing-analysis/profile.md`(또는 `$HOUSING_DATA_DIR/profile.md`)로 복사해 채운다. 저장소 안에는 두지 않는다.
 > 각 항목 옆에 확인일과 출처를 적는다. 미확인은 "미확인"으로 남긴다.
 
 ## 1. 기본 정보

@@ -1,0 +1,14 @@
+{
+  "name": "ai-public-housing-analysis",
+  "owner": { "name": "jhwanchoi", "url": "https://github.com/jhwanchoi" },
+  "metadata": { "description": "개인용 공공임대·청약 공고 분석 플러그인 마켓플레이스" },
+  "plugins": [
+    {
+      "name": "ai-public-housing-analysis",
+      "source": "./",
+      "description": "공공임대·청약 공고 탐색, 자격 판정, 후보 비교, 신청 일정·현황 관리",
+      "category": "productivity",
+      "keywords": ["korea", "public-housing", "청약"]
+    }
+  ]
+}
