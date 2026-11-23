@@ -44,7 +44,7 @@ A Claude Code plugin that reads Korean public-housing notices (LH, SH, HUG and m
 | `housing-eligibility` | 공급유형별 자격과 순위 판정, 소득 산정 자료와 시점 확인 |
 | `housing-unit-pick` | 당첨 구조, 실질 비용, 면적, 출퇴근 비교와 가중치 기반 추천 |
 | `housing-apply` | 캘린더 일정 2개 등록, 신청 메모, 기관 문의 문구 |
-| `housing-tracker` | 신청 현황 기록, 중복신청과 재당첨 제한 충돌 검사 |
+| `housing-tracker` | 신청 현황 기록(`scripts/tracker.py`), 중복신청, 재당첨 제한, 일정 겹침 검사 |
 
 ```mermaid
 flowchart LR
@@ -62,7 +62,14 @@ flowchart LR
 
 - [Claude Code](https://claude.com/claude-code)
 - 공고 PDF를 읽기 위한 `pdftotext` (macOS: `brew install poppler`)
+- **Chrome과 [Claude in Chrome](https://claude.com/chrome) 확장**: SH 첨부파일과 LH청약플러스 공고문은 브라우저로만 열립니다. 공고를 찾거나 원문을 확인할 때는 **Chrome을 켜고 확장을 연결해 두세요.** 연결돼 있지 않으면 Claude가 시작할 때 먼저 알려 주고, 그 공고들은 "원문 미확인"과 이유를 붙여 남깁니다.
 - 캘린더 등록 기능을 쓰려면 Claude Code에 구글 캘린더 연결이 필요합니다. 없어도 나머지 기능은 동작합니다.
+
+| 없을 때 | 빠지는 기능 |
+|---|---|
+| `pdftotext` | 받은 PDF의 텍스트 추출(쪽 이미지를 보며 읽어야 함) |
+| Chrome 연결 | SH, LH 공고 원문 확인. 해당 공고는 요약 정보로만 1차 선별 |
+| 구글 캘린더 연결 | 일정 자동 등록. 메모 텍스트만 만들어 줌 |
 
 ## 설치
 
